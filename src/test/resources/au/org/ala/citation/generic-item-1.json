@@ -1,0 +1,25 @@
+{
+  "type": "paper-conference",
+  "author": [
+    {
+      "family": "Wurritin",
+      "given": "Fredrick, Arnold"
+    },
+    {
+      "family": "Asbos",
+      "given":"Jennifer, H"
+    }
+  ],
+  "title": "A long way to the top",
+  "containerTitle": "Proceedings of the 9th Ignorable Conference",
+  "collectionEditor": [
+    "Marsley, Josh"
+  ],
+  "publisher": "Bulhack Postmodernism Factory",
+  "publisherPlace": "Melbourne, Australia",
+  "issued": {
+    "dateParts": [
+      [ 2019, 12, 4 ]
+    ]
+  }
+}

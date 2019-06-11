@@ -1,0 +1,1 @@
+<g:set var="bibDateFormat" value="year"/><bib:entry type="list"><g:render template="/bibliography/item_generic"/></bib:entry>

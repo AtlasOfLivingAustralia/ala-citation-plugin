@@ -1,0 +1,1 @@
+<g:set var="bibDateFormat" value="date-long"/><bib:entry type="article-newspaper"><g:render template="/bibliography/article_generic"/></bib:entry>

@@ -1,0 +1,23 @@
+{
+  "BHLType": "Item",
+  "FoundIn": "Metadata",
+  "ItemID": "176745",
+  "TitleID": "98252",
+  "Volume": "1869 Flower and kitchen garden directory",
+  "ItemUrl": "https://www.biodiversitylibrary.org/item/176745",
+  "TitleUrl": "https://www.biodiversitylibrary.org/bibliography/98252",
+  "MaterialType": "Published material",
+  "PublisherPlace": "Boston MA",
+  "PublisherName": "Curtis \u0026 Cobb.",
+  "PublicationDate": "1853",
+  "Authors": [
+    {
+      "Name": "Curtis \u0026 Cobb."
+    },
+    {
+      "Name": "Curtis, D. T. \u0026 Co."
+    }
+  ],
+  "Genre": "Serial",
+  "Title": "A descriptive catalogue of choice vegetable, flower, and agricultural seeds /"
+}

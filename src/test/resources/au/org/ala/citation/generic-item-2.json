@@ -1,0 +1,35 @@
+{
+  "type": "book",
+  "author": [
+    {
+      "family": "Carrol",
+      "given": "Lewis"
+    }
+  ],
+  "title": "Alice's Adventures in Wonderland",
+  "edition": "2nd",
+  "editor": [
+    {
+      "family": "Gardiner",
+      "given": "Martin"
+    }
+  ],
+  "illustrator":[
+    {
+      "literal": "Tenniel"
+    }
+  ],
+  "publisher": "Dover Editions",
+  "publisherPlace": "Boston, MA",
+  "originalDate": {
+    "dateParts": [
+      [ 1865 ]
+    ]
+  },
+  "issued": {
+    "dateParts": [
+      [ 1953 ]
+    ]
+  },
+  "DOI": "10.2307/j.ctvc7785k"
+}

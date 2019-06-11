@@ -1,0 +1,76 @@
+/** Bibliography styles */
+
+.bib-author {
+}
+
+.bib-collection-editor {
+}
+
+.bib-composer {
+}
+
+.bib-container-author {
+}
+
+.bib-container-title {
+    font-style: italic;
+}
+
+.bib-date {
+}
+
+.bib-director {
+}
+
+.bib-doi {
+}
+
+.bib-doi a {
+    font-family: monospace;
+}
+
+.bib-illustrator {
+}
+
+.bib-interviewer {
+}
+
+.bib-issue {
+}
+
+.bib-number {
+}
+
+.bib-publisher {
+}
+
+.bib-publisher-place {
+}
+
+.bib-recipient {
+}
+
+.bib-reviewed-author {
+}
+
+.bib-title {
+    font-style: italic;
+}
+
+.bib-article,.bib-article-journal,.bib-article-magazine,.bib-article-newspaper .bib-title {
+    font-style: inherit;
+}
+
+.bib-translator {
+}
+
+.bib-url {
+}
+
+.bib-url a {
+    font-family: monospace;
+}
+
+.bib-volume {
+    font-weight: bolder;
+}

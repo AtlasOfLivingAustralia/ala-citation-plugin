@@ -1,0 +1,28 @@
+<bib:block class="bib-author"><bib:formatAuthors authors="${item.author}"/></bib:block><%--
+--%><bib:block class="bib-editor" prefix="(${message(code: 'bibliography.editor.abbrev', default: 'ed.')} " suffix=")"><bib:formatAuthors authors="${item.editor}"/></bib:block><%--
+--%><bib:block class="bib-translator" prefix="(${message(code: 'bibliography.translator.abbrev', default: 'dir')} " suffix=")"><bib:formatAuthors authors="${item.translator}"/></bib:block><%--
+--%><bib:block class="bib-director" suffix="(${message(code: 'bibliography.director.abbrev', default: 'dir')})"><bib:formatAuthors authors="${item.director}"/></bib:block><%--
+--%><bib:block class="bib-composer"><bib:formatAuthors authors="${item.composer}"/></bib:block><%--
+--%><bib:block class="bib-reviewed-author" prefix="${message(code: 'bibliography.reviewed-author', default: 'reviews')} "><bib:formatAuthors authors="${item.reviewedAuthor}"/></bib:block><%--
+--%><bib:block class="bib-title">${item.title}</bib:block><%--
+--%><bib:block class="bib-edition" prefix="(" suffix=" ${message(code: 'bibliography.edition.abbrev', default: 'ed.')})">${item.edition}</bib:block><%--
+--%><bib:block class="bib-date"><bib:formatDate format="date-long" date="${item.eventDate}"/></bib:block><%--
+--%><g:if test="${item.containerTitle}"><bib:block connector=" "><g:message code="bibliography.in" default="in"/> </bib:block><%--
+  --%><bib:block class="bib-container-author"><bib:formatAuthors authors="${item.containerAuthor}"/></bib:block><%--
+  --%><bib:block class="bib-collection-editor" prefix="${message(code: 'bibliography.editor.abbrev', default: 'ed.')} "><bib:formatAuthors authors="${item.collectionEditor}"/></bib:block><%--
+  --%><bib:block class="bib-container-title">${item.containerTitle}</bib:block></g:if><%--
+--%><bib:block class="bib-interviewer" prefix=" ${message(code: 'bibliography.interviewer', default: 'interviewed by')} "><bib:formatAuthors authors="${item.interviewer}"/></bib:block><%--
+--%><bib:block class="bib-illustrator" prefix=" ${message(code: 'bibliography.illustrator', default: 'illustrator')} "><bib:formatAuthors authors="${item.illustrator}"/></bib:block><%--
+--%><bib:block class="bib-recipient" prefix=" ${message(code: 'bibliography.recipient', default: 'recipient')} "><bib:formatAuthors authors="${item.recipient}"/></bib:block><%--
+--%><bib:block class="bib-volume">${item.volume}</bib:block><%--
+--%><bib:block class="bib-number">${item.number}</bib:block><%--
+--%><bib:block class="bib-issue">${item.issue}</bib:block><%--
+--%><bib:block class="bib-publisher">${item.publisher}</bib:block><%--
+--%><bib:block class="bib-pages"><bib:formatPages page="${item.page}" marker="true"/></bib:block><%--
+--%><bib:block class="bib-publisher-place">${item.publisherPlace}</bib:block><%--
+--%><bib:block class="bib-date"><bib:formatDate format="${bibDateFormat ?: 'year'}" date="${item.issued}"/></bib:block><%--
+--%><bib:block class="bib-date" prefix="(${message(code: 'bibliography.original-date.abbrev')} " suffix=")"><bib:formatDate format="${bibDateFormat ?: 'year'}" date="${item.originalDate}"/></bib:block><%--
+--%><bib:block class="bib-date" prefix="(${message(code: 'bibliography.submitted.abbrev')} " suffix=")"><bib:formatDate format="${bibDateFormat ?: 'year'}" date="${item.submitted}"/></bib:block><%--
+--%><bib:block class="bib-doi" prefix="${message(code: 'bibliography.doi')}: " ><bib:formatDoi doi="${item.DOI}"/></bib:block><%--
+--%><bib:block class="bib-url"><bib:formatUrl url="${item.URL}"/></bib:block><%--
+--%><bib:block class="bib-date" prefix="${message(code: 'bibliography.accessed', default: 'accessed')} "><bib:formatDate format="date" date="${item.accessed}"/></bib:block>

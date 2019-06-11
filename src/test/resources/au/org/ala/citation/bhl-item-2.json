@@ -1,0 +1,369 @@
+{
+  "BHLType": "Item",
+  "FoundIn": "Metadata",
+  "ItemID": "164234",
+  "TitleID": "83900",
+  "Volume": "Senders A, 1885-1929",
+  "ItemUrl": "https://www.biodiversitylibrary.org/item/164234",
+  "TitleUrl": "https://www.biodiversitylibrary.org/bibliography/83900",
+  "MaterialType": "Mixed materials",
+  "PublicationDate": "1885",
+  "Authors": [
+    {
+      "Name": "Bailey, L. H. (Liberty Hyde),"
+    },
+    {
+      "Name": "Bebb, Michael Schuck,"
+    },
+    {
+      "Name": "Blaschka, Rudolf,"
+    },
+    {
+      "Name": "Deane, Walter,"
+    },
+    {
+      "Name": "Lloyd, C. G. (Curtis Gates),"
+    },
+    {
+      "Name": "Morong, Thomas,"
+    },
+    {
+      "Name": "Owen, Maria L. (Maria Louisa),"
+    },
+    {
+      "Name": "Rose, J N (Joseph Nelson)"
+    },
+    {
+      "Name": "Allen, Glover M. (Glover Morrill),"
+    },
+    {
+      "Name": "Audubon, Florence,"
+    },
+    {
+      "Name": "Audubon, Maria Rebecca,"
+    },
+    {
+      "Name": "Bailey, Eliza R.,"
+    },
+    {
+      "Name": "Barnes, Charles Reid,"
+    },
+    {
+      "Name": "Batchelder, Annie V.,"
+    },
+    {
+      "Name": "Batchelder, Charles Foster,"
+    },
+    {
+      "Name": "Benson, Albert Emerson,"
+    },
+    {
+      "Name": "Brainerd, Ezra,"
+    },
+    {
+      "Name": "Brewster, William,"
+    },
+    {
+      "Name": "Carr, Albert Bonus,"
+    },
+    {
+      "Name": "Carr, Gladys V.,"
+    },
+    {
+      "Name": "Chase, Agnes,"
+    },
+    {
+      "Name": "Cheney, Robert F.,"
+    },
+    {
+      "Name": "Christensen, Abby W.,"
+    },
+    {
+      "Name": "Churchill, Joseph Richmond,"
+    },
+    {
+      "Name": "Coolidge, Charles Austin,"
+    },
+    {
+      "Name": "Curtiss, Allen Hiram,"
+    },
+    {
+      "Name": "Cushing, Mary,"
+    },
+    {
+      "Name": "Deane, Charles E.,"
+    },
+    {
+      "Name": "Demetrio, C. H. (Charles Hermann),"
+    },
+    {
+      "Name": "Dexter, Lucy W.,"
+    },
+    {
+      "Name": "Dexter, Mary,"
+    },
+    {
+      "Name": "Eames, Edwin Hubert,"
+    },
+    {
+      "Name": "Eaton, A. A. (Alvah Augustus),"
+    },
+    {
+      "Name": "Eggleston, W. W."
+    },
+    {
+      "Name": "Faber, Helen R.,"
+    },
+    {
+      "Name": "Faber, Richard R.,"
+    },
+    {
+      "Name": "Farlow, W. G. (William Gilson),"
+    },
+    {
+      "Name": "Farwell, Oliver Atkins,"
+    },
+    {
+      "Name": "Faxon, Edwin,"
+    },
+    {
+      "Name": "Fernald, George B.,"
+    },
+    {
+      "Name": "Fernald, Merritt Lyndon,"
+    },
+    {
+      "Name": "Foord, William M.,"
+    },
+    {
+      "Name": "Foster, Theodore B.,"
+    },
+    {
+      "Name": "Ganong, William Francis,"
+    },
+    {
+      "Name": "Gattinger, Augustin,"
+    },
+    {
+      "Name": "Glatfelter, Noah Miller,"
+    },
+    {
+      "Name": "Goodale, George L. (George Lincoln),"
+    },
+    {
+      "Name": "Greene, Edward Lee,"
+    },
+    {
+      "Name": "Greenman, Anne T.,"
+    },
+    {
+      "Name": "Greenman, J. M. (Jesse More),"
+    },
+    {
+      "Name": "Hay, G. U. (George Upham),"
+    },
+    {
+      "Name": "Heading, Alice J.,"
+    },
+    {
+      "Name": "Herriot, W.,"
+    },
+    {
+      "Name": "Hervey, E. W. (Eliphalet Williams),"
+    },
+    {
+      "Name": "Hill, E. J. (Ellsworth Jerome),"
+    },
+    {
+      "Name": "Hitchcock, A. S. (Albert Spear),"
+    },
+    {
+      "Name": "Holm, Theo. (Theodor),"
+    },
+    {
+      "Name": "Hopkins, Richard J.,"
+    },
+    {
+      "Name": "Huber, Lucretia M.,"
+    },
+    {
+      "Name": "Jesup, Henry G. (Henry Griswold),"
+    },
+    {
+      "Name": "Kennedy, George G. (George Golding),"
+    },
+    {
+      "Name": "Knowlton, Frank Hall,"
+    },
+    {
+      "Name": "Lamson-Scribner, F.,"
+    },
+    {
+      "Name": "Linder, Charles,"
+    },
+    {
+      "Name": "Lowell, James Arnold,"
+    },
+    {
+      "Name": "Lunell, Joel"
+    },
+    {
+      "Name": "Mathews, F. Schuyler (Ferdinand Schuyler),"
+    },
+    {
+      "Name": "Maxon, William R. (William Ralph),"
+    },
+    {
+      "Name": "McAtee, W. L. (Waldo Lee)"
+    },
+    {
+      "Name": "Meehan, Thomas,"
+    },
+    {
+      "Name": "Munter, William H.,"
+    },
+    {
+      "Name": "Oldys, Henry,"
+    },
+    {
+      "Name": "Paton, Lucy Allen,"
+    },
+    {
+      "Name": "Pease, Arthur Stanley,"
+    },
+    {
+      "Name": "Peebles, Florence"
+    },
+    {
+      "Name": "Peebles, Florence,"
+    },
+    {
+      "Name": "Penhallow, D. P. (David Pearce),"
+    },
+    {
+      "Name": "Pennock, Charles J.,"
+    },
+    {
+      "Name": "Philbrook, Augustus E.,"
+    },
+    {
+      "Name": "Porter, Thomas C. (Thomas Conrad),"
+    },
+    {
+      "Name": "Pringle, Cyrus G. (Cyrus Guernsey),"
+    },
+    {
+      "Name": "Putnam, Bessie Lucina,"
+    },
+    {
+      "Name": "Putnam, William T.,"
+    },
+    {
+      "Name": "Rand, Edward Lothrop"
+    },
+    {
+      "Name": "Rau, Eugene Abraham,"
+    },
+    {
+      "Name": "Rehder, Alfred,"
+    },
+    {
+      "Name": "Richardson, Martha Bebb,"
+    },
+    {
+      "Name": "Robinson, Benjamin Lincoln,"
+    },
+    {
+      "Name": "Rolfe, W. J."
+    },
+    {
+      "Name": "Sandberg, John Herman,"
+    },
+    {
+      "Name": "Scudder, Winthrop S.,"
+    },
+    {
+      "Name": "Sheppard, Susan,"
+    },
+    {
+      "Name": "Shute, Fred A.,"
+    },
+    {
+      "Name": "Spaulding, F. B.,"
+    },
+    {
+      "Name": "Sprague, A. C.,"
+    },
+    {
+      "Name": "Steere, Rebecca P.,"
+    },
+    {
+      "Name": "Stone, Phoebe J.,"
+    },
+    {
+      "Name": "Stowell, Ruth K.,"
+    },
+    {
+      "Name": "Suksdorf, Wilhelm,"
+    },
+    {
+      "Name": "Tatnall, Edward,"
+    },
+    {
+      "Name": "Terry, Emily Hitchcock,"
+    },
+    {
+      "Name": "Thaxter, Roland,"
+    },
+    {
+      "Name": "Thayer, Evelyn,"
+    },
+    {
+      "Name": "Thayer, John Eliot,"
+    },
+    {
+      "Name": "Townsend, Charles Wendell,"
+    },
+    {
+      "Name": "Underwood, Lucien Marcus,"
+    },
+    {
+      "Name": "Vasey, George,"
+    },
+    {
+      "Name": "Ward, Lester F. (Lester Frank),"
+    },
+    {
+      "Name": "Ward, Lester Frank,"
+    },
+    {
+      "Name": "Ware, Robert Allison,"
+    },
+    {
+      "Name": "Weatherby, Charles Alfred,"
+    },
+    {
+      "Name": "Wiegand, Karl M. (Karl McKay),"
+    },
+    {
+      "Name": "Williams, Emile Francis,"
+    },
+    {
+      "Name": "Williams, R. S."
+    },
+    {
+      "Name": "Williams, R. S.  (Robert Statham), ,"
+    },
+    {
+      "Name": "Wood, Casey A. (Casey Albert),"
+    },
+    {
+      "Name": "Woodhouse, S. W. (Samuel Washington),"
+    },
+    {
+      "Name": "Harvard University. Gray Herbarium."
+    }
+  ],
+  "Genre": "Collection",
+  "Title": "Walter Deane correspondence.  Senders A-Z"
+}

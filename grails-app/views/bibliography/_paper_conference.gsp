@@ -1,0 +1,1 @@
+<g:set var="bibDateFormat" value="year-month-long"/><bib:entry type="paper-conference"><g:render template="/bibliography/item_generic"/></bib:entry>

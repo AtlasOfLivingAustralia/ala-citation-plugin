@@ -1,0 +1,7 @@
+citation:
+  abbreviateGivenName: true
+  maxAuthors: 4
+  pageMarker: false
+  doiResolver: https://doi.org/
+  adaptors:
+    - au.org.ala.citation.BHLAdaptor

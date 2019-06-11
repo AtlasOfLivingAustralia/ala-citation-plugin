@@ -1,0 +1,1 @@
+<g:set var="bibDateFormat" value="year"/><bib:entry type="monograph"><g:render template="/bibliography/publication_generic"/></bib:entry>
