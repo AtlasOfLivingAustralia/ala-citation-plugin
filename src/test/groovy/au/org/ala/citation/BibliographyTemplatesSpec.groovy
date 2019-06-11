@@ -27,7 +27,7 @@ class BibliographyTemplatesSpec extends Specification {
     def "test article generic 1"() {
         when:
         def item = adaptor.convert(slurper.parse(this.class.getResource('bhl-part-1.json')))
-        def result = render(template: '/bibliography/article_generic', model: [item: item]).replaceAll(/\s+/, ' ')
+        def result = render(template: '/bibliography/article_generic', model: [item: item]).replaceAll(/\s+/, ' ').trim()
         def expected = load('article-generic-1.txt')
         then:
         result == expected
@@ -36,7 +36,7 @@ class BibliographyTemplatesSpec extends Specification {
     def "test article generic 2"() {
         when:
         def item = adaptor.convert(slurper.parse(this.class.getResource('bhl-part-2.json')))
-        def result = render(template: '/bibliography/article_generic', model: [item: item]).replaceAll(/\s+/, ' ')
+        def result = render(template: '/bibliography/article_generic', model: [item: item]).replaceAll(/\s+/, ' ').trim()
         def expected = load('article-generic-2.txt')
         then:
         result == expected
@@ -45,7 +45,7 @@ class BibliographyTemplatesSpec extends Specification {
     def "test article journal 1"() {
         when:
         def item = adaptor.convert(slurper.parse(this.class.getResource('bhl-part-1.json')))
-        def result = render(template: '/bibliography/article_journal', model: [item: item]).replaceAll(/\s+/, ' ')
+        def result = render(template: '/bibliography/article_journal', model: [item: item]).replaceAll(/\s+/, ' ').trim()
         def expected = load('article-journal-1.txt')
         then:
         result == expected
@@ -54,7 +54,7 @@ class BibliographyTemplatesSpec extends Specification {
     def "test article magazine 1"() {
         when:
         def item = adaptor.convert(slurper.parse(this.class.getResource('bhl-part-1.json')))
-        def result = render(template: '/bibliography/article_magazine', model: [item: item]).replaceAll(/\s+/, ' ')
+        def result = render(template: '/bibliography/article_magazine', model: [item: item]).replaceAll(/\s+/, ' ').trim()
         def expected = load('article-magazine-1.txt')
         then:
         result == expected
@@ -63,7 +63,7 @@ class BibliographyTemplatesSpec extends Specification {
     def "test article newspaper 1"() {
         when:
         def item = adaptor.convert(slurper.parse(this.class.getResource('bhl-part-1.json')))
-        def result = render(template: '/bibliography/article_newspaper', model: [item: item]).replaceAll(/\s+/, ' ')
+        def result = render(template: '/bibliography/article_newspaper', model: [item: item]).replaceAll(/\s+/, ' ').trim()
         def expected = load('article-newspaper-1.txt')
         then:
         result == expected
@@ -72,7 +72,7 @@ class BibliographyTemplatesSpec extends Specification {
     def "test publication generic 1"() {
         when:
         def item = adaptor.convert(slurper.parse(this.class.getResource('bhl-item-1.json')))
-        def result = render(template: '/bibliography/publication_generic', model: [item: item]).replaceAll(/\s+/, ' ')
+        def result = render(template: '/bibliography/publication_generic', model: [item: item]).replaceAll(/\s+/, ' ').trim()
         def expected = load('publication-generic-1.txt')
         then:
         result == expected
@@ -81,7 +81,7 @@ class BibliographyTemplatesSpec extends Specification {
     def "test book 1"() {
         when:
         def item = adaptor.convert(slurper.parse(this.class.getResource('bhl-item-1.json')))
-        def result = render(template: '/bibliography/book', model: [item: item]).replaceAll(/\s+/, ' ')
+        def result = render(template: '/bibliography/book', model: [item: item]).replaceAll(/\s+/, ' ').trim()
         def expected = load('book-1.txt')
         then:
         result == expected
@@ -90,7 +90,7 @@ class BibliographyTemplatesSpec extends Specification {
     def "test item 1"() {
         when:
         def item = slurper.parse(this.class.getResource('generic-item-1.json'))
-        def result = render(template: '/bibliography/item', model: [item: item]).replaceAll(/\s+/, ' ')
+        def result = render(template: '/bibliography/item', model: [item: item]).replaceAll(/\s+/, ' ').trim()
         def expected = load('generic-item-1.txt')
         then:
         result == expected
@@ -99,8 +99,8 @@ class BibliographyTemplatesSpec extends Specification {
     def "test item 2"() {
         when:
         def item = slurper.parse(this.class.getResource('generic-item-2.json'))
-        def result = render(template: '/bibliography/item', model: [item: item]).replaceAll(/\s+/, ' ')
-        def expected = load('generic-item-1.txt')
+        def result = render(template: '/bibliography/item', model: [item: item]).replaceAll(/\s+/, ' ').trim()
+        def expected = load('generic-item-2.txt')
         then:
         result == expected
     }
