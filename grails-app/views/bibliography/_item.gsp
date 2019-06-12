@@ -18,6 +18,7 @@
 --%><g:elseif test="${item.type == 'list'}"><g:render template="/bibliography/list"/></g:elseif><%--
 --%><g:elseif test="${item.type == 'manuscript'}"><g:render template="/bibliography/manuscript"/></g:elseif><%--
 --%><g:elseif test="${item.type == 'map'}"><g:render template="/bibliography/map"/></g:elseif><%--
+--%><g:elseif test="${item.type == 'monograph'}"><g:render template="/bibliography/monograph"/></g:elseif><%--
 --%><g:elseif test="${item.type == 'motion_picture'}"><g:render template="/bibliography/motion_picture"/></g:elseif><%--
 --%><g:elseif test="${item.type == 'musical_score'}"><g:render template="/bibliography/musical_score"/></g:elseif><%--
 --%><g:elseif test="${item.type == 'pamphlet'}"><g:render template="/bibliography/pamphlet"/></g:elseif><%--

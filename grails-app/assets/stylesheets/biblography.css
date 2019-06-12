@@ -57,7 +57,19 @@
     font-style: italic;
 }
 
-.bib-article,.bib-article-journal,.bib-article-magazine,.bib-article-newspaper .bib-title {
+.bib-article .bib-title {
+    font-style: inherit;
+}
+
+.bib-article-journal .bib-title {
+    font-style: inherit;
+}
+
+.bib-article-magazine .bib-title {
+    font-style: inherit;
+}
+
+.bib-article-newspaper .bib-title {
     font-style: inherit;
 }
 

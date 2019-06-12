@@ -18,8 +18,8 @@
 --%><bib:block class="bib-number">${item.number}</bib:block><%--
 --%><bib:block class="bib-issue">${item.issue}</bib:block><%--
 --%><bib:block class="bib-publisher">${item.publisher}</bib:block><%--
---%><bib:block class="bib-pages"><bib:formatPages page="${item.page}" marker="true"/></bib:block><%--
 --%><bib:block class="bib-publisher-place">${item.publisherPlace}</bib:block><%--
+--%><bib:block class="bib-pages"><bib:formatPages page="${item.page}" marker="true"/></bib:block><%--
 --%><bib:block class="bib-date"><bib:formatDate format="${bibDateFormat ?: 'year'}" date="${item.issued}"/></bib:block><%--
 --%><bib:block class="bib-date" prefix="(${message(code: 'bibliography.original-date.abbrev')} " suffix=")"><bib:formatDate format="${bibDateFormat ?: 'year'}" date="${item.originalDate}"/></bib:block><%--
 --%><bib:block class="bib-date" prefix="(${message(code: 'bibliography.submitted.abbrev')} " suffix=")"><bib:formatDate format="${bibDateFormat ?: 'year'}" date="${item.submitted}"/></bib:block><%--

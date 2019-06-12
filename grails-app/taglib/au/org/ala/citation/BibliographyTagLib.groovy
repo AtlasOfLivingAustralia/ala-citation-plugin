@@ -42,7 +42,7 @@ class BibliographyTagLib implements GrailsConfigurationAware {
             out << raw("<div class=\"bibliography-entry")
             if (type)
                 out << ' bib-' << raw(type)
-            out << raw(">")
+            out << raw("\">")
         }
         out << body()
         if (html) {

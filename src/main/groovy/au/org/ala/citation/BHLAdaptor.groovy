@@ -20,7 +20,7 @@ class BHLAdaptor extends CSLAdaptor<Map> {
             'Article': 'article-journal',
             'Book': 'book',
             'Collection': 'collection',
-            'Correspondance': 'personal_communication',
+            'Correspondence': 'personal_communication',
             'List': 'list',
             'Monograph/Item': 'monograph',
             'Serial': 'book'
