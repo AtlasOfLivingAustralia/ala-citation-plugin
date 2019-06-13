@@ -37,7 +37,7 @@ The following configuration variables can be set:
 * `citation.pageMarker` Include a p or pp in page numbers or ranges. Defaults to false
 * `citation.doiResolver` The DOI resolver URL. Defaults to https://doi.org/
 * `citation.adaptors` A list of adaptors to convert bibliographic data into CSL
- 
+
 ## CSL Input
 
 The item to be displayed uses the fields specified
