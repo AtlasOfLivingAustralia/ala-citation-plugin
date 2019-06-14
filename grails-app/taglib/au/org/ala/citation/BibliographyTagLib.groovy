@@ -36,16 +36,16 @@ class BibliographyTagLib implements GrailsConfigurationAware {
      */
     def entry = { attrs, body ->
         def type = attrs.type
-        boolean html = out.encoder.codecIdentifier.codecName == 'HTML'
+        boolean isHtml = out.encoder.codecIdentifier.codecName == 'HTML'
         pageScope.setVariable(BLOCK_PREFIX, null)
-        if (html) {
+        if (isHtml) {
             out << raw("<div class=\"bibliography-entry")
             if (type)
                 out << ' bib-' << raw(type)
             out << raw("\">")
         }
         out << body()
-        if (html) {
+        if (isHtml) {
             out << raw("</div>")
         }
         pageScope.setVariable(BLOCK_PREFIX, null)
@@ -62,7 +62,7 @@ class BibliographyTagLib implements GrailsConfigurationAware {
      *
      */
     def block = { attrs, body ->
-        boolean html = out.encoder.codecIdentifier.codecName == 'HTML'
+        boolean isHtml = out.encoder.codecIdentifier.codecName == 'HTML'
         def clazz = attrs['class']
         def prefix = attrs.prefix ?: ''
         def suffix = attrs.suffix ?: ''
@@ -71,15 +71,18 @@ class BibliographyTagLib implements GrailsConfigurationAware {
         def content = body()?.trim()
         if (content) {
             def blockPrefix = pageScope.getVariable(BLOCK_PREFIX)
-            if (blockPrefix)
+            if (blockPrefix) {
                 out << blockPrefix
-            if (html)
+            }
+            if (isHtml) {
                 out << raw("<span") << raw(clazz ? " class=\"${clazz}\"" : '') << raw('>')
+            }
             out << prefix
             out << raw(content) // Don't double encode
             out << suffix
-            if (html)
+            if (isHtml) {
                 out << raw("</span>")
+            }
             pageScope.setVariable(BLOCK_PREFIX, connector)
         }
     }
@@ -95,8 +98,9 @@ class BibliographyTagLib implements GrailsConfigurationAware {
      */
     def formatAuthors = { attrs, body ->
         def authors = attrs.authors
-        if (!authors)
+        if (!authors) {
             return
+        }
         int total = authors.size()
         Iterator ai = authors.iterator()
         boolean abbreviate = attrs.containsKey('abbreviate') ? attrs.abbreviate.toBoolean() : abbreviateGivenName
@@ -104,7 +108,7 @@ class BibliographyTagLib implements GrailsConfigurationAware {
         Locale locale = attrs.locale ?: request.locale ?: Locale.default
         int max = attrs.max ?: maxAuthors
         int i = 0
-        boolean html = out.encoder.codecIdentifier.codecName == 'HTML'
+        boolean isHtml = out.encoder.codecIdentifier.codecName == 'HTML'
 
         while (ai.hasNext()) {
             def author = ai.next()
@@ -112,17 +116,20 @@ class BibliographyTagLib implements GrailsConfigurationAware {
             i++
             if (i == max && i < total) {
                 out << ' '
-                if (html)
+                if (isHtml) {
                     out << raw('<em>')
+                }
                 out << message(code: 'bibliography.etal', default: 'et al')
-                if (html)
+                if (isHtml) {
                     out << raw('</em>')
+                }
                 break
             }
-            if (i < total - 1)
+            if (i < total - 1) {
                 out << ', '
-            else if (i == total - 1)
+            } else if (i == total - 1) {
                 out << ' ' << message(code: 'bibliography.and', default: '&') << ' '
+            }
         }
     }
 
@@ -136,13 +143,14 @@ class BibliographyTagLib implements GrailsConfigurationAware {
      */
     def formatAuthor = { attrs, body ->
         def author = attrs.author
-        if (!author)
+        if (!author) {
             return
+        }
         Locale locale = attrs.locale ?: request.locale ?: Locale.default
         boolean abbreviate = attrs.containsKey('abbreviate') ? attrs.abbreviate.toBoolean() : abbreviateGivenName
-        if (author in String)
+        if (author in String) {
             out << author
-        else if (author.family) {
+        } else if (author.family) {
             def family = author.family
             def droppingParticle = author.droppingParticle
             if (droppingParticle && family.startsWith(droppingParticle)) {
@@ -151,17 +159,20 @@ class BibliographyTagLib implements GrailsConfigurationAware {
             out << family
             if (author.given) {
                 def given = author.given.split(/\s*,\s*/).collect { part ->
-                    if (droppingParticle && part.endsWith(droppingParticle))
+                    if (droppingParticle && part.endsWith(droppingParticle)) {
                         part = part.substring(0, part.length() - droppingParticle.length()).trim()
-                    if (abbreviate && part.length() > 1)
+                    }
+                    if (abbreviate && part.length() > 1) {
                         part = part.substring(0, 1) + '.'
+                    }
                     part
                 }
                 out << ',' << NBSP
                 for (int i = 0; i < given.size(); i++) {
                     out << given[i]
-                    if (!abbreviate && i < given.size() - 1)
+                    if (!abbreviate && i < given.size() - 1) {
                         out << NBSP
+                    }
                 }
             }
             if (droppingParticle) {
@@ -186,9 +197,10 @@ class BibliographyTagLib implements GrailsConfigurationAware {
         if (!attrs.page)
             return
         String page = attrs.page.replaceAll(/-+/, ENDASH)
-        boolean marker = attrs.containsKey('marker') ? attrs.marker.toBoolean() : pageMarker
-        if (marker && !page.startsWith('p'))
+        boolean isMarker = attrs.containsKey('marker') ? attrs.marker.toBoolean() : pageMarker
+        if (isMarker && !page.startsWith('p')) {
             out << (page.contains(ENDASH) ? 'pp' : 'p')
+        }
         out << page
     }
 
@@ -202,17 +214,17 @@ class BibliographyTagLib implements GrailsConfigurationAware {
      */
     def formatDate = { attrs, body ->
         def date = attrs.date
-        if (!date)
+        if (!date) {
             return
+        }
         Locale locale = attrs.locale ?: request.locale ?: Locale.default
         String format = attrs.format ?: 'year'
-        if (!date)
-            return
-        if (date in String)
+        if (date in String) {
             out << date
-        else {
-            if (date.circa)
+        } else {
+            if (date.circa) {
                 out << message(code: 'bibliography.circa.abbrev', default: 'c')
+            }
             if (date.dateParts) {
                 def makeCal = { List dp ->
                     def cal = Calendar.getInstance()
@@ -242,18 +254,20 @@ class BibliographyTagLib implements GrailsConfigurationAware {
                 Calendar from = date.dateParts.size() >= 1 ? makeCal(date.dateParts[0]) : null
                 Calendar to = date.dateParts.size() >= 2 ? makeCal(date.dateParts[1]) : null
                 def df = new SimpleDateFormat(DATE_FORMATS[format] ?: 'yyyy', locale)
-                if (from)
+                if (from) {
                     out << df.format(from.getTime())
+                }
                 if (to) {
                     out << NBSP << EMDASH << NBSP
                     out << df.format(to.getTime())
                 }
-            } else if (date.literal)
+            } else if (date.literal) {
                 out << date.literal
-            else if (date.raw)
+            } else if (date.raw) {
                 out << date.raw
-            else if (date.season)
+            } else if (date.season) {
                 out << date.season
+            }
         }
     }
 
@@ -268,13 +282,13 @@ class BibliographyTagLib implements GrailsConfigurationAware {
         if (!doi)
             return
         def encodeAs = attrs.encodeAs ?: defaultEncodeAs.taglib
-        boolean html = out.encoder.codecIdentifier.codecName == 'HTML'
+        boolean isHtml = out.encoder.codecIdentifier.codecName == 'HTML'
 
-        if (html) {
+        if (isHtml) {
             out << raw('<a href="') << raw(doiResolver) << raw(doi) << raw('">')
         }
         out << doi
-        if (html) {
+        if (isHtml) {
             out << raw("</a>")
         }
     }
@@ -291,13 +305,13 @@ class BibliographyTagLib implements GrailsConfigurationAware {
         if (!url)
             return
         def encodeAs = attrs.encodeAs ?: defaultEncodeAs.taglib
-        boolean html = out.encoder.codecIdentifier.codecName == 'HTML'
+        boolean isHtml = out.encoder.codecIdentifier.codecName == 'HTML'
 
-        if (html) {
+        if (isHtml) {
             out << raw('<a href="') << raw(url) << raw('">')
         }
         out << url
-        if (html) {
+        if (isHtml) {
             out << raw("</a>")
         }
     }

@@ -6,8 +6,10 @@ import java.util.regex.Pattern
 /**
  * An adaptor for the Biodiversity Heritage Library
  *
+ *
  * @author Doug Palmer &lt;Doug.Palmer@csiro.au&gt;
- * @copyright Copyright &copy; 2019 Atlas of Living Australia
+ * @license See LICENSE
+ *
  */
 class BHLAdaptor extends CSLAdaptor<Map> {
     // Nobility particles and similar

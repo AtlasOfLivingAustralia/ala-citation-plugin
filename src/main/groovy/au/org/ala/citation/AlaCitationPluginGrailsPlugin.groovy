@@ -12,7 +12,7 @@ class AlaCitationPluginGrailsPlugin extends Plugin {
     ]
 
     // TODO Fill in these fields
-    def title = "Ala Citation Plugin" // Headline display name of the plugin
+    def title = "ALA Citation Plugin" // Headline display name of the plugin
     def author = "Doug Palmer"
     def authorEmail = "Doug.Palmer@csiro.au"
     def description = '''\
@@ -26,7 +26,7 @@ Allow citation of literature resources using the Citation Style Library (CSL).
     // Extra (optional) plugin metadata
 
     // License: one of 'APACHE', 'GPL2', 'GPL3'
-//    def license = "APACHE"
+    def license = "MPL1.1"
 
     // Details of company behind the plugin (if there is one)
 //    def organization = [ name: "My Company", url: "http://www.my-company.com/" ]

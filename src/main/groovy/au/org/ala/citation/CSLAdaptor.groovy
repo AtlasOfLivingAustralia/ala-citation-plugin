@@ -5,7 +5,7 @@ package au.org.ala.citation
  * @param T The type of source data expected
  *
  * @author Doug Palmer &lt;Doug.Palmer@csiro.au&gt;
- * @copyright Copyright &copy; 2019 Atlas of Living Australia
+ * @license See LICENSE
  */
 abstract class CSLAdaptor<T> {
     /**

@@ -7,7 +7,7 @@ import spock.lang.Specification
  * Test cases for the BHL adaptor
  *
  * @author Doug Palmer &lt;Doug.Palmer@csiro.au&gt;
- * @copyright Copyright &copy; 2019 Atlas of Living Australia
+ * @license See LICENSE
  */
 class BHLAdaptorSpec extends Specification {
     BHLAdaptor adaptor = new BHLAdaptor()
