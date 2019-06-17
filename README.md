@@ -1,6 +1,8 @@
 # ALA Citation Plugin  [![Build Status](https://travis-ci.org/AtlasOfLivingAustralia/ala-citation-plugin.svg?branch=master)](https://travis-ci.org/AtlasOfLivingAustralia/ala-citation-plugin)
 
 A plugin to allow citations and bibliographic entries to be displayed easily.
+Citations are formatted using a house style; 
+see [customisation](#customisation) for how to change this.
 
 The plugin uses the [Citation Style Language](https://citationstyles.org/)
 (CSL) as a basis for input.
@@ -201,6 +203,6 @@ Format a document object identifier.
 The templates in the `bibliography` view directory can be customised to format whichever
 way you happen to like by adding an appropriate template to your application.
 Most templates simply forward to either `_article_generic`, `item_generic` or `publication_generic`
-so overriding these templates will 
+so overriding these templates will update most bibliographic entries.
 
 The bibliography CSS can also be adjusted, as required.
