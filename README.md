@@ -1,4 +1,4 @@
-# ALA Citation Plugin
+# ALA Citation Plugin  [![Build Status](https://travis-ci.org/AtlasOfLivingAustralia/ala-citation-plugin.svg?branch=master)](https://travis-ci.org/AtlasOfLivingAustralia/ala-citation-plugin)
 
 A plugin to allow citations and bibliographic entries to be displayed easily.
 
